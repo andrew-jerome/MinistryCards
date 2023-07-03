@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28DC719F2A5345780032B85C /* MinistryCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC719E2A5345780032B85C /* MinistryCardsApp.swift */; };
+		28DC71A12A5345780032B85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A02A5345780032B85C /* ContentView.swift */; };
+		28DC71A32A53457A0032B85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DC71A22A53457A0032B85C /* Assets.xcassets */; };
+		28DC71A62A53457A0032B85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DC71A52A53457A0032B85C /* Preview Assets.xcassets */; };
+		28DC71A82A53457A0032B85C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A72A53457A0032B85C /* Persistence.swift */; };
+		28DC71AB2A53457A0032B85C /* MinistryCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A92A53457A0032B85C /* MinistryCards.xcdatamodeld */; };
+		28DC71B52A53457A0032B85C /* MinistryCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71B42A53457A0032B85C /* MinistryCardsTests.swift */; };
+		28DC71BF2A53457A0032B85C /* MinistryCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71BE2A53457A0032B85C /* MinistryCardsUITests.swift */; };
+		28DC71C12A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DC71B12A53457A0032B85C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DC71932A5345780032B85C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DC719A2A5345780032B85C;
+			remoteInfo = MinistryCards;
+		};
+		28DC71BB2A53457A0032B85C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DC71932A5345780032B85C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DC719A2A5345780032B85C;
+			remoteInfo = MinistryCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28DC719B2A5345780032B85C /* MinistryCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinistryCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DC719E2A5345780032B85C /* MinistryCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsApp.swift; sourceTree = "<group>"; };
+		28DC71A02A5345780032B85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28DC71A22A53457A0032B85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28DC71A52A53457A0032B85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28DC71A72A53457A0032B85C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		28DC71AA2A53457A0032B85C /* MinistryCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MinistryCards.xcdatamodel; sourceTree = "<group>"; };
+		28DC71B02A53457A0032B85C /* MinistryCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinistryCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DC71B42A53457A0032B85C /* MinistryCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsTests.swift; sourceTree = "<group>"; };
+		28DC71BA2A53457A0032B85C /* MinistryCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinistryCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DC71BE2A53457A0032B85C /* MinistryCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsUITests.swift; sourceTree = "<group>"; };
+		28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DC71982A5345780032B85C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71AD2A53457A0032B85C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71B72A53457A0032B85C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DC71922A5345780032B85C = {
+			isa = PBXGroup;
+			children = (
+				28DC719D2A5345780032B85C /* MinistryCards */,
+				28DC71B32A53457A0032B85C /* MinistryCardsTests */,
+				28DC71BD2A53457A0032B85C /* MinistryCardsUITests */,
+				28DC719C2A5345780032B85C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DC719C2A5345780032B85C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DC719B2A5345780032B85C /* MinistryCards.app */,
+				28DC71B02A53457A0032B85C /* MinistryCardsTests.xctest */,
+				28DC71BA2A53457A0032B85C /* MinistryCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DC719D2A5345780032B85C /* MinistryCards */ = {
+			isa = PBXGroup;
+			children = (
+				28DC719E2A5345780032B85C /* MinistryCardsApp.swift */,
+				28DC71A02A5345780032B85C /* ContentView.swift */,
+				28DC71A22A53457A0032B85C /* Assets.xcassets */,
+				28DC71A72A53457A0032B85C /* Persistence.swift */,
+				28DC71A92A53457A0032B85C /* MinistryCards.xcdatamodeld */,
+				28DC71A42A53457A0032B85C /* Preview Content */,
+			);
+			path = MinistryCards;
+			sourceTree = "<group>";
+		};
+		28DC71A42A53457A0032B85C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28DC71A52A53457A0032B85C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28DC71B32A53457A0032B85C /* MinistryCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DC71B42A53457A0032B85C /* MinistryCardsTests.swift */,
+			);
+			path = MinistryCardsTests;
+			sourceTree = "<group>";
+		};
+		28DC71BD2A53457A0032B85C /* MinistryCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28DC71BE2A53457A0032B85C /* MinistryCardsUITests.swift */,
+				28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */,
+			);
+			path = MinistryCardsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DC719A2A5345780032B85C /* MinistryCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DC71C42A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCards" */;
+			buildPhases = (
+				28DC71972A5345780032B85C /* Sources */,
+				28DC71982A5345780032B85C /* Frameworks */,
+				28DC71992A5345780032B85C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinistryCards;
+			productName = MinistryCards;
+			productReference = 28DC719B2A5345780032B85C /* MinistryCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28DC71AF2A53457A0032B85C /* MinistryCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DC71C72A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCardsTests" */;
+			buildPhases = (
+				28DC71AC2A53457A0032B85C /* Sources */,
+				28DC71AD2A53457A0032B85C /* Frameworks */,
+				28DC71AE2A53457A0032B85C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DC71B22A53457A0032B85C /* PBXTargetDependency */,
+			);
+			name = MinistryCardsTests;
+			productName = MinistryCardsTests;
+			productReference = 28DC71B02A53457A0032B85C /* MinistryCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28DC71B92A53457A0032B85C /* MinistryCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DC71CA2A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCardsUITests" */;
+			buildPhases = (
+				28DC71B62A53457A0032B85C /* Sources */,
+				28DC71B72A53457A0032B85C /* Frameworks */,
+				28DC71B82A53457A0032B85C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DC71BC2A53457A0032B85C /* PBXTargetDependency */,
+			);
+			name = MinistryCardsUITests;
+			productName = MinistryCardsUITests;
+			productReference = 28DC71BA2A53457A0032B85C /* MinistryCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DC71932A5345780032B85C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					28DC719A2A5345780032B85C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					28DC71AF2A53457A0032B85C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 28DC719A2A5345780032B85C;
+					};
+					28DC71B92A53457A0032B85C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 28DC719A2A5345780032B85C;
+					};
+				};
+			};
+			buildConfigurationList = 28DC71962A5345780032B85C /* Build configuration list for PBXProject "MinistryCards" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28DC71922A5345780032B85C;
+			productRefGroup = 28DC719C2A5345780032B85C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DC719A2A5345780032B85C /* MinistryCards */,
+				28DC71AF2A53457A0032B85C /* MinistryCardsTests */,
+				28DC71B92A53457A0032B85C /* MinistryCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DC71992A5345780032B85C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DC71A62A53457A0032B85C /* Preview Assets.xcassets in Resources */,
+				28DC71A32A53457A0032B85C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71AE2A53457A0032B85C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71B82A53457A0032B85C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DC71972A5345780032B85C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DC71A82A53457A0032B85C /* Persistence.swift in Sources */,
+				28DC71A12A5345780032B85C /* ContentView.swift in Sources */,
+				28DC71AB2A53457A0032B85C /* MinistryCards.xcdatamodeld in Sources */,
+				28DC719F2A5345780032B85C /* MinistryCardsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71AC2A53457A0032B85C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DC71B52A53457A0032B85C /* MinistryCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DC71B62A53457A0032B85C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DC71BF2A53457A0032B85C /* MinistryCardsUITests.swift in Sources */,
+				28DC71C12A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DC71B22A53457A0032B85C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DC719A2A5345780032B85C /* MinistryCards */;
+			targetProxy = 28DC71B12A53457A0032B85C /* PBXContainerItemProxy */;
+		};
+		28DC71BC2A53457A0032B85C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DC719A2A5345780032B85C /* MinistryCards */;
+			targetProxy = 28DC71BB2A53457A0032B85C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28DC71C22A53457B0032B85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28DC71C32A53457B0032B85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DC71C52A53457B0032B85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MinistryCards/Preview Content\"";
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28DC71C62A53457B0032B85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MinistryCards/Preview Content\"";
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28DC71C82A53457B0032B85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinistryCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MinistryCards";
+			};
+			name = Debug;
+		};
+		28DC71C92A53457B0032B85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinistryCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MinistryCards";
+			};
+			name = Release;
+		};
+		28DC71CB2A53457B0032B85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MinistryCards;
+			};
+			name = Debug;
+		};
+		28DC71CC2A53457B0032B85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5R38PD5D8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MinistryCards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DC71962A5345780032B85C /* Build configuration list for PBXProject "MinistryCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DC71C22A53457B0032B85C /* Debug */,
+				28DC71C32A53457B0032B85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DC71C42A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DC71C52A53457B0032B85C /* Debug */,
+				28DC71C62A53457B0032B85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DC71C72A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DC71C82A53457B0032B85C /* Debug */,
+				28DC71C92A53457B0032B85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DC71CA2A53457B0032B85C /* Build configuration list for PBXNativeTarget "MinistryCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DC71CB2A53457B0032B85C /* Debug */,
+				28DC71CC2A53457B0032B85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28DC71A92A53457A0032B85C /* MinistryCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28DC71AA2A53457A0032B85C /* MinistryCards.xcdatamodel */,
+			);
+			currentVersion = 28DC71AA2A53457A0032B85C /* MinistryCards.xcdatamodel */;
+			path = MinistryCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28DC71932A5345780032B85C /* Project object */;
+}
