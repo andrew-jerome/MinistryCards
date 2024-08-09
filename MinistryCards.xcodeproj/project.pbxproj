@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28DC719F2A5345780032B85C /* MinistryCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC719E2A5345780032B85C /* MinistryCardsApp.swift */; };
-		28DC71A12A5345780032B85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A02A5345780032B85C /* ContentView.swift */; };
 		28DC71A32A53457A0032B85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DC71A22A53457A0032B85C /* Assets.xcassets */; };
 		28DC71A62A53457A0032B85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DC71A52A53457A0032B85C /* Preview Assets.xcassets */; };
-		28DC71A82A53457A0032B85C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A72A53457A0032B85C /* Persistence.swift */; };
 		28DC71AB2A53457A0032B85C /* MinistryCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71A92A53457A0032B85C /* MinistryCards.xcdatamodeld */; };
 		28DC71B52A53457A0032B85C /* MinistryCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71B42A53457A0032B85C /* MinistryCardsTests.swift */; };
 		28DC71BF2A53457A0032B85C /* MinistryCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71BE2A53457A0032B85C /* MinistryCardsUITests.swift */; };
 		28DC71C12A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */; };
+		28DC71CE2A5346EB0032B85C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71CD2A5346EB0032B85C /* MainView.swift */; };
+		28DC71D02A5347810032B85C /* MinistryCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71CF2A5347810032B85C /* MinistryCardsApp.swift */; };
+		28DC71D22A53479E0032B85C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC71D12A53479E0032B85C /* Persistence.swift */; };
+		28F7036C2A534E9E0067E913 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7036A2A534E9E0067E913 /* Student+CoreDataClass.swift */; };
+		28F7036D2A534E9E0067E913 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7036B2A534E9E0067E913 /* Student+CoreDataProperties.swift */; };
+		28F703702A534EE20067E913 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7036F2A534EE20067E913 /* TagsView.swift */; };
+		28F703722A534EFF0067E913 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703712A534EFF0067E913 /* OtherView.swift */; };
+		28F703752A534F380067E913 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703742A534F380067E913 /* DayView.swift */; };
+		28F703772A534FA40067E913 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703762A534FA40067E913 /* NoteRow.swift */; };
+		28F703792A534FC90067E913 /* PrayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703782A534FC90067E913 /* PrayerRow.swift */; };
+		28F7037B2A534FE20067E913 /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7037A2A534FE20067E913 /* MeetingRow.swift */; };
+		28F7037E2A5350250067E913 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7037D2A5350250067E913 /* ListView.swift */; };
+		28F703802A53503F0067E913 /* StudentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7037F2A53503F0067E913 /* StudentRow.swift */; };
+		28F703832A53507F0067E913 /* StudentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703822A53507F0067E913 /* StudentDetail.swift */; };
+		28F703852A5350AC0067E913 /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703842A5350AC0067E913 /* AddStudentView.swift */; };
+		28F703872A5350C50067E913 /* AddMeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703862A5350C50067E913 /* AddMeetingView.swift */; };
+		28F703892A5350F20067E913 /* EditMeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703882A5350F20067E913 /* EditMeetingView.swift */; };
+		28F7038B2A5351080067E913 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7038A2A5351080067E913 /* EditNoteView.swift */; };
+		28F7038D2A5351200067E913 /* EditPrayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7038C2A5351200067E913 /* EditPrayerView.swift */; };
+		28F7038F2A5351410067E913 /* EditStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7038E2A5351410067E913 /* EditStudentView.swift */; };
+		28F703912A53515E0067E913 /* AddPrayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703902A53515E0067E913 /* AddPrayerView.swift */; };
+		28F703932A5351740067E913 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F703922A5351740067E913 /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,17 +56,36 @@
 
 /* Begin PBXFileReference section */
 		28DC719B2A5345780032B85C /* MinistryCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinistryCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		28DC719E2A5345780032B85C /* MinistryCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsApp.swift; sourceTree = "<group>"; };
-		28DC71A02A5345780032B85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28DC71A22A53457A0032B85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28DC71A52A53457A0032B85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		28DC71A72A53457A0032B85C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		28DC71AA2A53457A0032B85C /* MinistryCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MinistryCards.xcdatamodel; sourceTree = "<group>"; };
 		28DC71B02A53457A0032B85C /* MinistryCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinistryCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DC71B42A53457A0032B85C /* MinistryCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsTests.swift; sourceTree = "<group>"; };
 		28DC71BA2A53457A0032B85C /* MinistryCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinistryCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DC71BE2A53457A0032B85C /* MinistryCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsUITests.swift; sourceTree = "<group>"; };
 		28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28DC71CD2A5346EB0032B85C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		28DC71CF2A5347810032B85C /* MinistryCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryCardsApp.swift; sourceTree = "<group>"; };
+		28DC71D12A53479E0032B85C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		28F7036A2A534E9E0067E913 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		28F7036B2A534E9E0067E913 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		28F7036F2A534EE20067E913 /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		28F703712A534EFF0067E913 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		28F703742A534F380067E913 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		28F703762A534FA40067E913 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		28F703782A534FC90067E913 /* PrayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerRow.swift; sourceTree = "<group>"; };
+		28F7037A2A534FE20067E913 /* MeetingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRow.swift; sourceTree = "<group>"; };
+		28F7037D2A5350250067E913 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		28F7037F2A53503F0067E913 /* StudentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRow.swift; sourceTree = "<group>"; };
+		28F703822A53507F0067E913 /* StudentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetail.swift; sourceTree = "<group>"; };
+		28F703842A5350AC0067E913 /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		28F703862A5350C50067E913 /* AddMeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingView.swift; sourceTree = "<group>"; };
+		28F703882A5350F20067E913 /* EditMeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMeetingView.swift; sourceTree = "<group>"; };
+		28F7038A2A5351080067E913 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
+		28F7038C2A5351200067E913 /* EditPrayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPrayerView.swift; sourceTree = "<group>"; };
+		28F7038E2A5351410067E913 /* EditStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudentView.swift; sourceTree = "<group>"; };
+		28F703902A53515E0067E913 /* AddPrayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPrayerView.swift; sourceTree = "<group>"; };
+		28F703922A5351740067E913 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +136,16 @@
 		28DC719D2A5345780032B85C /* MinistryCards */ = {
 			isa = PBXGroup;
 			children = (
-				28DC719E2A5345780032B85C /* MinistryCardsApp.swift */,
-				28DC71A02A5345780032B85C /* ContentView.swift */,
+				28DC71CD2A5346EB0032B85C /* MainView.swift */,
+				28F703812A53506E0067E913 /* Student */,
+				28F7037C2A5350110067E913 /* StudentList */,
+				28F703732A534F250067E913 /* Day */,
+				28F7036E2A534ECF0067E913 /* Other */,
+				28F703692A534E7F0067E913 /* Data */,
 				28DC71A22A53457A0032B85C /* Assets.xcassets */,
-				28DC71A72A53457A0032B85C /* Persistence.swift */,
 				28DC71A92A53457A0032B85C /* MinistryCards.xcdatamodeld */,
+				28DC71CF2A5347810032B85C /* MinistryCardsApp.swift */,
+				28DC71D12A53479E0032B85C /* Persistence.swift */,
 				28DC71A42A53457A0032B85C /* Preview Content */,
 			);
 			path = MinistryCards;
@@ -131,6 +174,60 @@
 				28DC71C02A53457B0032B85C /* MinistryCardsUITestsLaunchTests.swift */,
 			);
 			path = MinistryCardsUITests;
+			sourceTree = "<group>";
+		};
+		28F703692A534E7F0067E913 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28F7036A2A534E9E0067E913 /* Student+CoreDataClass.swift */,
+				28F7036B2A534E9E0067E913 /* Student+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		28F7036E2A534ECF0067E913 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				28F7036F2A534EE20067E913 /* TagsView.swift */,
+				28F703712A534EFF0067E913 /* OtherView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		28F703732A534F250067E913 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				28F703742A534F380067E913 /* DayView.swift */,
+				28F703762A534FA40067E913 /* NoteRow.swift */,
+				28F703782A534FC90067E913 /* PrayerRow.swift */,
+				28F7037A2A534FE20067E913 /* MeetingRow.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		28F7037C2A5350110067E913 /* StudentList */ = {
+			isa = PBXGroup;
+			children = (
+				28F7037D2A5350250067E913 /* ListView.swift */,
+				28F7037F2A53503F0067E913 /* StudentRow.swift */,
+			);
+			path = StudentList;
+			sourceTree = "<group>";
+		};
+		28F703812A53506E0067E913 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				28F703822A53507F0067E913 /* StudentDetail.swift */,
+				28F703842A5350AC0067E913 /* AddStudentView.swift */,
+				28F703862A5350C50067E913 /* AddMeetingView.swift */,
+				28F703882A5350F20067E913 /* EditMeetingView.swift */,
+				28F7038A2A5351080067E913 /* EditNoteView.swift */,
+				28F7038C2A5351200067E913 /* EditPrayerView.swift */,
+				28F7038E2A5351410067E913 /* EditStudentView.swift */,
+				28F703902A53515E0067E913 /* AddPrayerView.swift */,
+				28F703922A5351740067E913 /* AddNoteView.swift */,
+			);
+			path = Student;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +360,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28DC71A82A53457A0032B85C /* Persistence.swift in Sources */,
-				28DC71A12A5345780032B85C /* ContentView.swift in Sources */,
+				28F7038F2A5351410067E913 /* EditStudentView.swift in Sources */,
+				28F703772A534FA40067E913 /* NoteRow.swift in Sources */,
+				28F7037E2A5350250067E913 /* ListView.swift in Sources */,
+				28F703872A5350C50067E913 /* AddMeetingView.swift in Sources */,
+				28F7038B2A5351080067E913 /* EditNoteView.swift in Sources */,
+				28F703792A534FC90067E913 /* PrayerRow.swift in Sources */,
+				28F7036D2A534E9E0067E913 /* Student+CoreDataProperties.swift in Sources */,
+				28F703802A53503F0067E913 /* StudentRow.swift in Sources */,
 				28DC71AB2A53457A0032B85C /* MinistryCards.xcdatamodeld in Sources */,
-				28DC719F2A5345780032B85C /* MinistryCardsApp.swift in Sources */,
+				28F703702A534EE20067E913 /* TagsView.swift in Sources */,
+				28DC71D02A5347810032B85C /* MinistryCardsApp.swift in Sources */,
+				28F703832A53507F0067E913 /* StudentDetail.swift in Sources */,
+				28F703752A534F380067E913 /* DayView.swift in Sources */,
+				28F703852A5350AC0067E913 /* AddStudentView.swift in Sources */,
+				28F703892A5350F20067E913 /* EditMeetingView.swift in Sources */,
+				28DC71CE2A5346EB0032B85C /* MainView.swift in Sources */,
+				28F7037B2A534FE20067E913 /* MeetingRow.swift in Sources */,
+				28DC71D22A53479E0032B85C /* Persistence.swift in Sources */,
+				28F7036C2A534E9E0067E913 /* Student+CoreDataClass.swift in Sources */,
+				28F703912A53515E0067E913 /* AddPrayerView.swift in Sources */,
+				28F703932A5351740067E913 /* AddNoteView.swift in Sources */,
+				28F703722A534EFF0067E913 /* OtherView.swift in Sources */,
+				28F7038D2A5351200067E913 /* EditPrayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MinistryCards/Preview Content\"";
 				DEVELOPMENT_TEAM = 5R38PD5D8V;
 				ENABLE_PREVIEWS = YES;
@@ -437,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -452,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MinistryCards/Preview Content\"";
 				DEVELOPMENT_TEAM = 5R38PD5D8V;
 				ENABLE_PREVIEWS = YES;
@@ -466,7 +582,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewJerome.MinistryCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

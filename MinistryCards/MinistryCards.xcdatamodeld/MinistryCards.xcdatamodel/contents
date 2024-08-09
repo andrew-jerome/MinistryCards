@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Meeting" representedClassName="Meeting" syncable="YES" codeGenerationType="class">
+        <attribute name="dT" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <relationship name="isLast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="lastMeeting" inverseEntity="Student"/>
+        <relationship name="isNext" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="nextMeeting" inverseEntity="Student"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="meetings" inverseEntity="Student"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="dT" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hasDate" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="notes" inverseEntity="Student"/>
+    </entity>
+    <entity name="Prayer" representedClassName="Prayer" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="dT" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hasDate" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="prayers" inverseEntity="Student"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="degree" optional="YES" attributeType="String"/>
+        <attribute name="hasMet" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="String"/>
+        <relationship name="lastMeeting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meeting" inverseName="isLast" inverseEntity="Meeting"/>
+        <relationship name="meetings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meeting" inverseName="student" inverseEntity="Meeting"/>
+        <relationship name="nextMeeting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meeting" inverseName="isNext" inverseEntity="Meeting"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Note" inverseName="student" inverseEntity="Note"/>
+        <relationship name="prayers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Prayer" inverseName="student" inverseEntity="Prayer"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="involved" inverseEntity="Tag"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="involved" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="tags" inverseEntity="Student"/>
+    </entity>
 </model>
