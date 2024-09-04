@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct DayView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: []) var meetings: FetchedResults<Meeting>
     @FetchRequest(sortDescriptors: []) var prayers: FetchedResults<Prayer>
+    @FetchRequest(sortDescriptors: []) var prayersToday: FetchedResults<Prayer>
     @FetchRequest(sortDescriptors: []) var notes: FetchedResults<Note>
+    @State private var numArray: [Int] = []
     
     //let now = Date()
     //let startofday = Calendar.current.startOfDay(for: now)
-    
+
     //let Predicate = NSPredicate(format: "dT >= %@ and dT <= %@", startofday, endofday)
     //let Predicate = makePredicate()
     //@FetchRequest(sortDescriptors: [], predicate: Predicate) var meetings: FetchedResults<Meeting>
@@ -30,10 +33,11 @@ struct DayView: View {
         let Predicate = NSPredicate(format: "(dT >= %@) AND (dT <= %@) AND (hasDate = true)", startofday as CVarArg, endofday as CVarArg)
         
         _meetings = FetchRequest<Meeting>(sortDescriptors: [SortDescriptor(\.dT)], predicate: PredicateMeetings)
-        _prayers = FetchRequest<Prayer>(sortDescriptors: [], predicate: Predicate)
+        _prayersToday = FetchRequest<Prayer>(sortDescriptors: [], predicate: Predicate)
         _notes = FetchRequest<Note>(sortDescriptors: [], predicate: Predicate)
         
         dateFormat1.dateFormat = "h:mm a"
+        
     }
     
     var body: some View {
@@ -57,11 +61,35 @@ struct DayView: View {
                 
                 Divider()
                 
-                if prayers.isEmpty && notes.isEmpty {
-                    Text("There are no prayer requests for today's date.")
+                if prayers.isEmpty {
+                    Text("There are no prayer requests.")
                 }
-                else {
+                else if prayers.count <= 3 {
                     ForEach(prayers) { prayer in
+                        NavigationLink {
+                            StudentDetail(student: prayer.student!)
+                        } label: {
+                            PrayerRow(prayer: prayer)
+                        }
+                    }
+                }
+                else if numArray.count > 0 {
+                    ForEach(0..<3) { index in
+                        NavigationLink {
+                            StudentDetail(student: prayers[numArray[index]].student!)
+                        } label: {
+                            PrayerRow(prayer: prayers[numArray[index]])
+                        }
+                    }
+                }
+                
+                if !prayersToday.isEmpty || !notes.isEmpty {
+                    Text("Prayers Scheduled Today")
+                        .font(.headline)
+                    
+                    Divider()
+                    
+                    ForEach(prayersToday) { prayer in
                         NavigationLink {
                             StudentDetail(student: prayer.student!)
                         } label: {
@@ -76,6 +104,28 @@ struct DayView: View {
                         }
                     }
                 }
+                
+                
+                
+//                if prayers.isEmpty && notes.isEmpty {
+//                    Text("There are no prayer requests for today's date.")
+//                }
+//                else {
+//                    ForEach(prayers) { prayer in
+//                        NavigationLink {
+//                            StudentDetail(student: prayer.student!)
+//                        } label: {
+//                            PrayerRow(prayer: prayer)
+//                        }
+//                    }
+//                    ForEach(notes) { note in
+//                        NavigationLink {
+//                            StudentDetail(student: note.student!)
+//                        } label: {
+//                            NoteRow(note: note)
+//                        }
+//                    }
+//                }
                 
                 Divider()
                     .overlay(Color("PrimaryColor"))
@@ -101,6 +151,41 @@ struct DayView: View {
                 Spacer()
             }
             .padding()
+        }
+        .onAppear() {
+            print(UserDefaults.standard.object(forKey: "LastOpened") as! Date)
+            print(Date())
+            let startofday = Calendar.current.startOfDay(for: Date())
+            //if UserDefaults.standard.object(forKey: "LastOpened") as! Date != Date() {
+            if UserDefaults.standard.object(forKey: "LastOpened") as! Date != startofday {
+                if prayers.count > 2 {
+                    for i in 0...2 {
+                        print(i)
+                        var flag = false
+                        var newNum = 0
+                        while flag == false {
+                            flag = true
+                            newNum = Int.random(in:0..<prayers.count)
+                            if i != 0 {
+                                for j in 0...(i-1) {
+                                    if newNum == numArray[j] {
+                                        print(10)
+                                        flag = false
+                                    }
+                                }
+                            }
+                        }
+                        numArray.append(newNum)
+                    }
+                }
+                UserDefaults.standard.set(numArray, forKey: "PrayerIndices")
+                UserDefaults.standard.set(startofday, forKey: "LastOpened")
+                print(numArray)
+            }
+            else {
+                print("test")
+                numArray = UserDefaults.standard.array(forKey: "PrayerIndices") as? [Int] ?? [Int]()
+            }
         }
         
 //        NavigationView {
